@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AE5A649-EEED-4940-890B-61D0B2F6F084}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AgainstTheGodsLibrary</RootNamespace>
+    <AssemblyName>AgainstTheGodsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gods.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Race.cs" />
+    <Compile Include="Combat.cs" />
+    <Compile Include="S_Inanna.cs" />
+    <Compile Include="S_Enlil.cs" />
+    <Compile Include="S_Enki.cs" />
+    <Compile Include="S_Nanna.cs" />
+    <Compile Include="S_Utu.cs" />
+    <Compile Include="S_Ereshkigal.cs" />
+    <Compile Include="S_Gula.cs" />
+    <Compile Include="S_Ki.cs" />
+    <Compile Include="S_An.cs" />
+    <Compile Include="S_Nammu.cs" />
+    <Compile Include="MG_Gibil.cs" />
+    <Compile Include="MG_Shamash.cs" />
+    <Compile Include="MG_Nanna.cs" />
+    <Compile Include="MG_Enlil.cs" />
+    <Compile Include="MG_Nergal.cs" />
+    <Compile Include="MG_Nabu.cs" />
+    <Compile Include="MG_Ea.cs" />
+    <Compile Include="MG_Dagon.cs" />
+    <Compile Include="MG_Adad.cs" />
+    <Compile Include="R_Mercury.cs" />
+    <Compile Include="R_Vulcan.cs" />
+    <Compile Include="R_Saturn.cs" />
+    <Compile Include="R_Cupid.cs" />
+    <Compile Include="R_Mars.cs" />
+    <Compile Include="R_Apollo.cs" />
+    <Compile Include="R_Pluto.cs" />
+    <Compile Include="R_Neptune.cs" />
+    <Compile Include="R_Jupiter.cs" />
+    <Compile Include="R_Bacchus.cs" />
+    <Compile Include="E_Sekhmet.cs" />
+    <Compile Include="E_Hathor.cs" />
+    <Compile Include="E_Thoth.cs" />
+    <Compile Include="E_Horus.cs" />
+    <Compile Include="E_Ra.cs" />
+    <Compile Include="E_Anubis.cs" />
+    <Compile Include="E_Osiris.cs" />
+    <Compile Include="E_Mut.cs" />
+    <Compile Include="E_Amun_Ra.cs" />
+    <Compile Include="E_Geb.cs" />
+    <Compile Include="Weapons.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
